@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    
+
+    <title>Bootstarp Project</title>
+  </head>
+
+  <body class="bg-dark">
+    <!-- Tool-Box start -->
+    <div class="toolbox position-fixed bg-warning-50 text-light p-3 border">
+      <div class="tools">
+        <h4>Options</h3>
+        <p class="mb-2">Colors</p>
+        <ul class="color-options list-unstyled d-flex align-items-center">
+          <li class=" me-2 rounded"></li>
+          <li class=" me-2 rounded"></li>
+          <li class=" me-2 rounded"></li>
+          <li class=" me-2 rounded"></li>
+        </ul>
+      </div>
+      <i class="gear-check fa-solid fa-gear fa-2x p-1 border"></i>
+    </div>
+    <!-- Tool-Box end -->
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top"
+      data-bs-theme="dark"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">IT Design</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Company</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu ">
+                <li>
+                  <a class="dropdown-item bg-transparent" href="#"
+                    >Programming</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item bg-transparent" href="#"
+                    >Web Design</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item bg-transparent" href="#">Desktop</a>
+                </li>
+                <li><hr class="dropdown-divider bg-transparent" /></li>
+                <li>
+                  <a class="dropdown-item bg-transparent" href="#"
+                    >Web Hosting</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <!-- Carousel -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel car-test slide d-none d-md-block"
+      data-bs-touch="false"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active "
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item item-test active" data-bs-interval="5000">
+          <img src="/imgs/landing-1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-flex justify-content-center flex-column px-5">
+            <h2 class="mb-3">this header is for testing as well</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              dolore ipsa vitae adipisci non mollitia ipsam alias architecto
+              sapiente vel ex consectetur cupiditate quos incidunt deserunt
+              animi suscipit, corporis qui.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item item-test" data-bs-interval="5000">
+          <img src="/imgs/landing-2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-flex justify-content-center flex-column px-5">
+            <h2>this header is for testing as well</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              dolore ipsa vitae adipisci non mollitia ipsam alias architecto
+              sapiente vel ex consectetur cupiditate quos incidunt deserunt
+              animi suscipit, corporis qui.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item item-test" data-bs-interval="5000">
+          <img src="/imgs/landing-3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-flex justify-content-center flex-column px-5">
+            <h2>this header is for testing as well</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              dolore ipsa vitae adipisci non mollitia ipsam alias architecto
+              sapiente vel ex consectetur cupiditate quos incidunt deserunt
+              animi suscipit, corporis qui.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel -->
+    <!-- About Section -->
+    <div class="section border-bottom py-5">
+      <div class="container text-center text-light">
+        <h1 class="fw-normal">
+          Meet Our New Template <span >IT.</span> Design
+        </h1>
+        <p class="text-secondary">
+          This is our new template made with
+          <strong >Bootstrap</strong> 5.3.2.
+        </p>
+      </div>
+    </div>
+    <!-- About Section -->
+    <!-- Features -->
+    <div class="features py-5 bg-dark text-light">
+      <div class="container text-center">
+        <h2 class="fs-1 fw-normal mb-5">Our Features</h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 p-3">
+            <div class="feat-box p-3 rounded hvr-float-shadow">
+              <i class="fa-regular fa-circle-check fa-2x mb-3"></i>
+              <h4 class="text-black-50">100% Responsive</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                obcaecati distinctio numquam. Consequatur fuga natus aspernatur
+                at nesciunt, similique atque necessitatibus ex vel maiores
+                corrupti officia, suscipit vitae ullam cupiditate!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 p-3">
+            <div class="feat-box p-3 p-3 rounded hvr-float-shadow">
+              <i class="fa-regular fa-thumbs-up fa-2x mb-3"></i>
+              <h4 class="text-black-50">Retina Ready</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                obcaecati distinctio numquam. Consequatur fuga natus aspernatur
+                at nesciunt, similique atque necessitatibus ex vel maiores
+                corrupti officia, suscipit vitae ullam cupiditate!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 p-3">
+            <div class="feat-box p-3 rounded hvr-float-shadow">
+              <i class="fa-regular fa-eye fa-2x mb-3"></i>
+              <h4 class="text-black-50">Awesome Display</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                obcaecati distinctio numquam. Consequatur fuga natus aspernatur
+                at nesciunt, similique atque necessitatibus ex vel maiores
+                corrupti officia, suscipit vitae ullam cupiditate!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 p-3">
+            <div class="feat-box p-3 rounded hvr-float-shadow">
+              <i class="fa-regular fa-pen-to-square fa-2x mb-3"></i>
+              <h4 class="text-black-50">Well Documented</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                obcaecati distinctio numquam. Consequatur fuga natus aspernatur
+                at nesciunt, similique atque necessitatibus ex vel maiores
+                corrupti officia, suscipit vitae ullam cupiditate!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Features -->
+    <!-- testimonials -->
+    <div class="testimonials py-5 border-top border-bottom text-light">
+      <div
+        id="testimonials-slide"
+        class="carousel slide position-relative"
+        data-bs-touch="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#testimonials-slide"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            
+            type="button"
+            data-bs-target="#testimonials-slide"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            
+            type="button"
+            data-bs-target="#testimonials-slide"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner ">
+          <h2 class="fw-normal text-center mb-4">What Our Clients Say</h2>
+          <div class="container text-center">
+            <div class="carousel-item active">
+              <q class=" fs-5 fst-italic"> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                dolore ipsa vitae adipisci non mollitia ipsam alias architecto
+                sapiente vel ex consectetur cupiditate quos incidunt deserunt
+                animi suscipit, corporis qui.
+              </q>
+              <span
+                class="d-block w-25 ms-auto text-info border-bottom  mt-3"
+                ><q>Islam Taha, <span class="text-success">CEO</span></q></span
+              >
+            </div>
+            <div class="carousel-item">
+              <q class=" fs-5 fst-italic">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                dolore ipsa vitae adipisci non mollitia ipsam alias architecto
+                sapiente vel ex consectetur cupiditate quos incidunt deserunt
+                animi suscipit, corporis qui.
+              </q>
+              <span
+                class="d-block w-25 ms-auto text-info border-bottom  mt-3"
+                ><q
+                  >Mohamed Hany, <span class="text-success">CEO</span></q
+                ></span
+              >
+            </div>
+            <div class="carousel-item">
+              <q class=" fs-5 fst-italic">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                dolore ipsa vitae adipisci non mollitia ipsam alias architecto
+                sapiente vel ex consectetur cupiditate quos incidunt deserunt
+                animi suscipit, corporis qui.
+              </q>
+              <span
+                class="d-block w-25 ms-auto text-info border-bottom  mt-3"
+                ><q>Ali Mohamed, <span class="text-success">CEO</span></q></span
+              >
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev pe-5"
+            type="button"
+            data-bs-target="#testimonials-slide"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next ps-5"
+            type="button"
+            data-bs-target="#testimonials-slide"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- testimonials -->
+    <!-- Pricing -->
+    <div class="pricing py-5 text-center text-light">
+      <div class="container">
+        <h2 class="fw-normal my-5">Price Plans</h2>
+        <div class="row justify-content-center mb-5">
+          <div class="col-sm-6 col-md-4 col-lg-3 text-light mb-4 mb-lg-0">
+            <div class="plan-box border rounded">
+              <h3 class="fw-normal border-bottom border-light p-3">Hosting</h3>
+              <span class="fs-2 fst-italic text-primary reounded-circle"
+                >$40</span
+              >
+              <ul class="p-3 list-unstyled">
+                <li class="mb-3 fs-5">Space: 30GB</li>
+                <li class="mb-3 fs-5">Emails: 20</li>
+                <li class="mb-3 fs-5">Ips: 2 IP</li>
+                <li class="mb-3 fs-5">Databases: 10</li>
+                <li class="mb-3 fs-5">Ftp Accounts: 5</li>
+              </ul>
+              <a href="#" class="btn btn-primary mb-3 border-0 hvr-bounce-to-right">Buy now</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 text-light mb-4 mb-lg-0">
+            <div class="plan-box border rounded">
+              <h3 class="fw-normal border-bottom border-light p-3">Vps</h3>
+              <span class="fs-2 fst-italic text-secondary">$50</span>
+              <ul class="p-3 list-unstyled">
+                <li class="mb-3 fs-5">Space: 50GB</li>
+                <li class="mb-3 fs-5">Emails: 20</li>
+                <li class="mb-3 fs-5">Ips: 2 IP</li>
+                <li class="mb-3 fs-5">Databases: 20</li>
+                <li class="mb-3 fs-5">Ftp Accounts: 10</li>
+              </ul>
+              <a href="#" class="btn btn-secondary mb-3 border-0 overflow-hidden hvr-bounce-to-right">Buy now</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 text-light mb-4 mb-lg-0">
+            <div class="plan-box border   rounded">
+              <h3 class="fw-normal border-bottom border-light p-3">
+                Dedicated
+              </h3>
+              <span class="fs-2 fst-italic text-success">$70</span>
+              <ul class="p-3 list-unstyled">
+                <li class="mb-3 fs-5">Space: 80GB</li>
+                <li class="mb-3 fs-5">Emails: 40</li>
+                <li class="mb-3 fs-5">Ips: 8 IP</li>
+                <li class="mb-3 fs-5">Databases: 30</li>
+                <li class="mb-3 fs-5">Ftp Accounts: 20</li>
+              </ul>
+              <a href="#" class="btn btn-success mb-3 border-0 hvr-bounce-to-right">Buy now</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 text-light mb-4 mb-lg-0">
+            <div class="plan-box border  rounded">
+              <h3 class="fw-normal border-bottom border-light p-3">cloud</h3>
+              <span class="fs-2 fst-italic text-danger">$90</span>
+              <ul class="p-3 list-unstyled">
+                <li class="mb-3 fs-5">Space: 90GB</li>
+                <li class="mb-3 fs-5">Emails: 50</li>
+                <li class="mb-3 fs-5">Ips: 10 IP</li>
+                <li class="mb-3 fs-5">Databases: 50</li>
+                <li class="mb-3 fs-5">Ftp Accounts: 50</li>
+              </ul>
+              <a href="#" class="btn btn-dark mb-3 border-0 hvr-bounce-to-right">Buy now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing -->
+    <!-- Our Team -->
+    <div class="team py-5 text-light position-relative">
+      <div class="container position-relative">
+        <h2 class="text-center mb-5">Our Team</h2>
+        <div class="row">
+          <div class="col-sm-6 col-lg-3">
+            <div class="member p-3 text-center">
+              <img
+                class="mb-3 rounded-circle"
+                src="/imgs/skills-01.jpg"
+                alt=""
+              />
+              <p class="fs-3">Islam Taha</p>
+              <p>
+                Islam Taha is the founder of nothing website and he is also a
+                leading bussiness man in his clown world *_*
+              </p>
+              <a
+                href="https://google.com"
+                target="_blank"
+                class=" d-inline-block"
+                ><i class="fa-brands fa-google-plus-g"></i
+              ></a>
+              <a href="" class=" d-inline-block"
+                ><i class="fa-brands fa-facebook-f "></i
+              ></a>
+              <a href="" class=" d-inline-block"
+                ><i class="fa-brands fa-x-twitter "></i
+              ></a>
+              <a href="" class=" d-inline-block"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="member p-3 text-center">
+              <img
+                class="mb-3 rounded-circle"
+                src="/imgs/skills-01.jpg"
+                alt=""
+              />
+              <p class="fs-3">Islam Taha</p>
+              <p>
+                Islam Taha is the founder of nothing website and he is also a
+                leading bussiness man in his clown world *_*
+              </p>
+              <a href="" class="d-inline-block"
+                ><i class="fa-brands fa-google-plus-g "></i
+              ></a>
+              <a href="" class="d-inline-block"
+                ><i class="fa-brands fa-facebook-f "></i
+              ></a>
+              <a href="" class="d-inline-block"
+                ><i class="fa-brands fa-x-twitter "></i
+              ></a>
+              <a href="" class="d-inline-block"
+                ><i class="fa-brands fa-youtube "></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="member p-3 text-center">
+              <img
+                class="mb-3 rounded-circle"
+                src="/imgs/skills-01.jpg"
+                alt=""
+              />
+              <p class="fs-3">Islam Taha</p>
+              <p>
+                Islam Taha is the founder of nothing website and he is also a
+                leading bussiness man in his clown world *_*
+              </p>
+              <a href="" class=" d-inline-block"
+                ><i class="fa-brands fa-google-plus-g "></i
+              ></a>
+              <a href="" class="d-inline-block"
+                ><i class="fa-brands fa-facebook-f "></i
+              ></a>
+              <a href="" class=" d-inline-block"
+                ><i class="fa-brands fa-x-twitter "></i
+              ></a>
+              <a href="" class=" d-inline-block"
+                ><i class="fa-brands fa-youtube "></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="member p-3 text-center">
+              <img
+                class="mb-3 rounded-circle"
+                src="/imgs/skills-01.jpg"
+                alt=""
+              />
+              <p class="fs-3">Islam Taha</p>
+              <p>
+                Islam Taha is the founder of nothing website and he is also a
+                leading bussiness man in his clown world *_*
+              </p>
+              <a href="" class="d-inline-block"
+                ><i class="fa-brands fa-google-plus-g "></i
+              ></a>
+              <a href="" class="d-inline-block"
+                ><i class="fa-brands fa-facebook-f "></i
+              ></a>
+              <a href="" class="d-inline-block"
+                ><i class="fa-brands fa-x-twitter "></i
+              ></a>
+              <a href="" class="d-inline-block"
+                ><i class="fa-brands fa-youtube "></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Team -->
+    <!-- Subscribe -->
+    <div class="subscribe py-5 text-center text-light">
+      <div class="container">
+        <h2 class="fs-1 fw-normal">Subscribe!</h2>
+        <p class="mb-4 fs-5">
+          if you like what you see, subscribe to get all the latest news!
+        </p>
+        <form class="d-flex justify-content-center align-items-center">
+          <i class="test fa-regular fa-envelope fa-2x mx-4"></i>
+
+          <input
+            class="outline-0 p-1 ps-5 bg-dark border border-secondary border-end-0"
+            type="email"
+            placeholder="write your email"
+          />
+          <input
+            class="btn  text-light rounded-0 border border-secondary border-start-0"
+            type="submit"
+            value="Subscribe"
+          />
+        </form>
+      </div>
+    </div>
+    <!-- Subscribe -->
+    <!-- Our Stats -->
+    <div class="stats py-5 position-relative text-light">
+      <div class="container position-relative text-center">
+        <h2 class="fs-1 fw-normal mb-5">Our Stats</h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="info p-4">
+              <i class="fa-solid fa-users fa-5x mb-3"></i>
+              <p class="fs-2 fw-bold mb-0">9,500</p>
+              <span>happy user</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info p-4">
+              <i class="fa-solid fa-comments fa-5x mb-3"></i>
+              <p class="fs-2 fw-bold mb-0">25,600</p>
+              <span>Shared Comments</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info p-4">
+              <i class="fa-solid fa-suitcase fa-5x mb-3"></i>
+              <p class="fs-2 fw-bold mb-0">3,200</p>
+              <span>Done Deals</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info p-4">
+              <i class="fa-solid fa-ticket fa-5x mb-3"></i>
+              <p class="fs-2 fw-bold mb-0">95,500</p>
+              <span>Tickeks Archieved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Stats -->
+    <!-- Skills -->
+    <div class="skills py-5">
+      <div class="container text-light">
+        <h2 class="text-center fs-1 fw-normal mb-5">Our Skills</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6 order-2 order-md-1 p-4">
+            <div
+              class="progress mb-4"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar text-bg-info w-50">HTML</div>
+            </div>
+            <div
+              class="progress mb-4"
+              aria-valuenow="100"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar text-bg-primary w-100">CSS</div>
+            </div>
+            <div
+              class="progress mb-4"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar text-bg-warning w-25">JavaScript</div>
+            </div>
+            <div
+              class="progress mb-4"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar text-bg-danger w-75">PHP</div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 order-1 order-md-2 p-4 text-center text-md-start"
+          >
+            <h3 class="fs-2 fw-normal mb-2">About Our Team</h3>
+            <p class="lh-lg text-white-50">
+              We are a freaking useless team that does nothing in life but
+              wasting or time on useless things.<br />So if are useless and you
+              wanna waste your time, it's the right place for you. Join us and
+              start do nothing
+            </p>
+          </div>
+        </div>
+        <a href="" class="btn offset-4 offset-md-10 col-4 col-md-2 text-light"
+          >Join now!</a
+        >
+      </div>
+    </div>
+    <!-- Skills -->
+    <!-- Contact Us -->
+    <div class="contact py-5 text-light position-relative">
+      <div class="container position-relative text-center">
+        <i class="fa-solid fa-headset fa-5x mb-3"></i>
+        <h2 class="fw-normal">Ask whatever you want</h2>
+        <p class="mb-5">Feel free to contact anytime</p>
+
+        <form class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Username" />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email" />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Mobile Number"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <textarea
+              class="form-control"
+              placeholder="Your Message"
+              style="height: 88px"
+            ></textarea>
+            <button
+              type="button"
+              class="btn text-light fs-5 mt-3 p-0 w-100"
+            >
+              Contact
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Contact Us -->
+    <!-- Our clients -->
+    <div class="clients py-2 border-top border-bottom">
+      <div class="container">
+        <ul
+          class="list-unstyled text-center row align-items-center justify-content-center"
+        >
+          <li class="col-2 col-md-1">
+            <img class="img-fluid" src="/imgs/6 (1).png" alt="" />
+          </li>
+          <li class="col-2 col-md-1">
+            <img class="img-fluid" src="/imgs/6 (2).png" alt="" />
+          </li>
+          <li class="col-2 col-md-1">
+            <img class="img-fluid" src="/imgs/6 (3).png" alt="" />
+          </li>
+          <li class="col-2 col-md-1">
+            <img class="img-fluid" src="/imgs/6 (4).png" alt="" />
+          </li>
+          <li class="col-2 col-md-1">
+            <img class="img-fluid" src="/imgs/6 (5).png" alt="" />
+          </li>
+          <li class="col-2 col-md-1">
+            <img class="img-fluid" src="/imgs/6 (6).png" alt="" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Our clients -->
+    <!-- Footer -->
+    <div class="footer pt-5 text-light ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mt-4 mt-md-0">
+            <h2 class="fw-normal fs-4 mb-4">Sitemap</h2>
+            <ul class="links list-unstyled  mb-4">
+              <li>Home</li>
+              <li>About</li>
+              <li>Company</li>
+              <li>Code</li>
+              <li>Design</li>
+              <li>Hosting</li>
+              <li>Solution</li>
+              <li>Sitemap</li>
+              <li>Contact</li>
+            </ul>
+            <ul class="social list-unstyled d-flex align-items-center">
+              <li><i class="fa-brands fa-google-plus-g fa-2x"></i></li>
+              <li><i class="fa-brands fa-facebook-f fa-2x"></i></li>
+              <li><i class="fa-brands fa-x-twitter fa-2x"></i></li>
+              <li><i class="fa-brands fa-pinterest fa-2x"></i></li>
+              <li><i class="fa-solid fa-rss fa-2x"></i></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-4 mt-md-0 text-center text-md-start">
+            <h2 class="fw-normal fs-4 mb-4">Latest Articles</h2>
+            <div class="media row mb-3">
+              <div class="pull-left col-2">
+                <a href="" class="text-light">
+                  <i class="fa-regular fa-newspaper fa-3x"></i>
+                </a>
+              </div>
+              <div class="pull-left col-10 ">
+                <p>
+                  This pragraph is only for testing because I'm just applying
+                  what I have learned so far
+                </p>
+              </div>
+            </div>
+            <div class="media row mb-3">
+              <div class="pull-left col-2">
+                <a href="" class="text-light">
+                  <i class="fa-solid fa-newspaper fa-3x"></i>
+                </a>
+              </div>
+              <div class="pull-left col-10 ">
+                <p>
+                  This pragraph is only for testing because I'm just applying
+                  what I have learned so far
+                </p>
+              </div>
+            </div>
+            <div class="media row">
+              <div class="pull-left col-2">
+                <a href="" class="text-light">
+                  <i class="fa-regular fa-newspaper fa-3x"></i>
+                </a>
+              </div>
+              <div class="pull-left col-10">
+                <p>
+                  This pragraph is only for testing because I'm just applying
+                  what I have learned so far
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center text-lg-start">
+            <h2 class="fw-normal fs-4 mb-4">Our Awesome Work</h2>
+            <div class="row justify-content-center">
+              <img
+                class="col-5 img-thumbnail mx-2 mb-2 p-1  "
+                src="/imgs/shuffle-01.jpg"
+                alt=""
+              />
+              <img
+                class="col-5 img-thumbnail mx-2 mb-2 p-1 "
+                src="/imgs/shuffle-02.jpg"
+                alt=""
+              />
+              <img
+                class="col-5 img-thumbnail mx-2 p-1 "
+                src="/imgs/shuffle-03.jpg"
+                alt=""
+              />
+              <img
+                class="col-5 img-thumbnail mx-2 p-1 "
+                src="/imgs/shuffle-04.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right text-center mt-4 py-4 fs-lg-1 bg-dark">
+        All Rights Reserved &copy; <span class="fw-bold">IT</span> 2024.
+      </div>
+    </div>
+    <!-- Footer -->
+    <!-- Loading Page -->
+    <div class="loading" >
+      <span class="loader"></span>
+    </div>
+    <!-- Loading Page -->
+    <!-- scroll to top -->
+    <div id="top" class="rounded hvr-icon-wobble-vertical">
+      <i class="fa-solid fa-jet-fighter-up fa-2x p-2 hvr-icon"></i>
+    </div>
+    <!-- scroll to top -->
+    <script src="/javaScript/bootstrap.bundle.min.js"></script>
+    <!-- <script src="/javaScript/all.min.js"></script> -->
+    <script src="/javaScript/json/main.json"></script>
+    <script src="/javaScript/main.js" type="module"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  </body>
+</html>
